@@ -3,119 +3,210 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Home',
+      href: '/',
+    },
+    {
+      text: 'Branches',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Arbo & Veiligheid',
+          href: getPermalink('/branche/arbo-veiligheid'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Bouw & Industrie',
+          href: getPermalink('/branche/bouw-industrie'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
+          text: 'Zorg & Welzijn',
+          href: getPermalink('/branche/zorg-welzijn'),
         },
         {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Vervoer & Logistiek',
+          href: getPermalink('/branche/vervoer-logistiek'),
+        },
+        {
+          text: 'Onderwijs & Contractactiviteiten',
+          href: getPermalink('/branche/onderwijs'),
+        },
+        {
+          text: 'Bouw & Industrie',
+          href: getPermalink('/branche/bouw-industrie'),
+        },
+        {
+          text: 'Gemeente & Overheid',
+          href: getPermalink('/branche/gemeente-overheid'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Functies',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: 'De nieuwe Viper',
+          href: getPermalink('/de-nieuwe-viper'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: 'Viper Blocks',
+          href: getPermalink('/viper-blocks'),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: 'Voor Opleiders',
+          href: getPermalink('/voor-opleiders'),
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
+          text: 'Voor Examens',
+          href: getPermalink('/voor-examens'),
+        },
+        {
+          text: 'Voor Bedrijfacademies',
+          href: getPermalink('/voor-academies'),
+        },
+        {
+          text: 'Alle functies',
+          href: getPermalink('/alle-functies'),
+        },
+      ],
+    },
+    {
+      text: 'Standaard+',
+      href: getPermalink('/standaard-plus'),
+    },
+    {
+      text: 'Prijzen',
+      href: getPermalink('/prijzen'),
+    },
+    {
+      text: 'Team',
+      links: [
+        {
+          text: 'Visie',
+          href: getPermalink('/over-ons/visie'),
+        },
+        {
+          text: 'Werken bij',
+          href: getPermalink('/over-ons/werken-bij'),
         },
         {
           text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          href: getPermalink('/over-ons/contact'),
         },
       ],
     },
-    {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
-    },
-    {
-      text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
-    },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
+    // {
+    //   text: 'Homes',
+    //   links: [
+    //     {
+    //       text: 'SaaS',
+    //       href: getPermalink('/homes/saas'),
+    //     },
+    //     {
+    //       text: 'Startup',
+    //       href: getPermalink('/homes/startup'),
+    //     },
+    //     {
+    //       text: 'Mobile App',
+    //       href: getPermalink('/homes/mobile-app'),
+    //     },
+    //     {
+    //       text: 'Personal',
+    //       href: getPermalink('/homes/personal'),
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Pages',
+    //   links: [
+    //     {
+    //       text: 'Features (Anchor Link)',
+    //       href: getPermalink('/#features'),
+    //     },
+    //     {
+    //       text: 'Services',
+    //       href: getPermalink('/services'),
+    //     },
+    //     {
+    //       text: 'Pricing',
+    //       href: getPermalink('/pricing'),
+    //     },
+    //     {
+    //       text: 'About us',
+    //       href: getPermalink('/about'),
+    //     },
+    //     {
+    //       text: 'Contact',
+    //       href: getPermalink('/contact'),
+    //     },
+    //     {
+    //       text: 'Terms',
+    //       href: getPermalink('/terms'),
+    //     },
+    //     {
+    //       text: 'Privacy policy',
+    //       href: getPermalink('/privacy'),
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Landing',
+    //   links: [
+    //     {
+    //       text: 'Lead Generation',
+    //       href: getPermalink('/landing/lead-generation'),
+    //     },
+    //     {
+    //       text: 'Long-form Sales',
+    //       href: getPermalink('/landing/sales'),
+    //     },
+    //     {
+    //       text: 'Click-Through',
+    //       href: getPermalink('/landing/click-through'),
+    //     },
+    //     {
+    //       text: 'Product Details (or Services)',
+    //       href: getPermalink('/landing/product'),
+    //     },
+    //     {
+    //       text: 'Coming Soon or Pre-Launch',
+    //       href: getPermalink('/landing/pre-launch'),
+    //     },
+    //     {
+    //       text: 'Subscription',
+    //       href: getPermalink('/landing/subscription'),
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Blog',
+    //   links: [
+    //     {
+    //       text: 'Blog List',
+    //       href: getBlogPermalink(),
+    //     },
+    //     {
+    //       text: 'Article',
+    //       href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+    //     },
+    //     {
+    //       text: 'Article (with MDX)',
+    //       href: getPermalink('markdown-elements-demo-post', 'post'),
+    //     },
+    //     {
+    //       text: 'Category Page',
+    //       href: getPermalink('tutorials', 'category'),
+    //     },
+    //     {
+    //       text: 'Tag Page',
+    //       href: getPermalink('astro', 'tag'),
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Widgets',
+    //   href: '#',
+    // },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Inloggen', href: '/inloggen', target: '_blank' }],
 };
 
 export const footerData = {
